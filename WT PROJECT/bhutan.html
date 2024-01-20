@@ -1,0 +1,106 @@
+<html >
+<head>
+    <title>Bhutan Itinerary</title>
+    <link rel="stylesheet" href="packages_css.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+    </style>
+</head>
+<body>
+  <section class="nav-bar">
+    <div class="logo">Voyage Vista</div>
+    <ul class="menu">
+      <li><a href="home_page.html">home</a></li>
+      <li><a href="Main_page.html">packages</a></li>
+      <li><a href="login_page.html">Login/Signup</a></li>
+      <li><a href="home_page.html">about us</a></li>
+      <li><a href="home_page.html">contact us</a></li>
+    </ul>
+    </div>
+</section>
+    <section>
+        <h1>Bhutan</h1>
+        <img src="bhutan.jpeg" alt="Bhutan" height="200" width="600">
+    </section>
+    <div id="root"></div>
+          <a href="Booking_details.html"><button>Confirm package</button></a>
+          <a href="Main_page.html"><button>Back</button></a>
+        </body>
+    </head>
+
+    <script type="text/babel">
+      class Bhutan extends React.Component{
+        render(){
+        return(
+          <section class="wow">
+            <h3><u>Itinerary:</u></h3>
+          <p>5 Days plan</p>
+          <ul>
+            <li>2 Flights</li>
+            <li>0 Transfers</li>
+            <li>1 Hotel</li>
+          </ul>  
+          <hr/>
+          <h3>Day 1: Arrival at Bagdogara </h3>
+          <dl>
+            <dt><i>Flight from Bengaluru to Bhutan</i></dt>
+            <dd>10:00 AM---------------02:00 PM</dd>
+            <dt><i>Transfer to Phuentsholing</i></dt>
+            <dd>3 hrs</dd>
+            <dt><i>Stay at Wangdue Ecolodge</i></dt>
+          </dl>
+          <hr/>
+          <h3>Day 2: Transfernto Thimphu </h3>
+          <dt><i>Transfer to Thimphu</i></dt>
+          <i>Stay at The Willows Hotel</i>
+            <dd>5 hrs</dd>
+          <ul>
+            <li>Chuu River</li>
+            <li>Beauutiful Valley</li>
+          </ul>
+          <p>Be sure to sink your teeth into mmomo kopi and steam dumplings</p>
+          <hr/>
+          <h3>Day 3: Sightseeing in Thimphu</h3>
+          <ul>
+            <li>Motihang mini zoo</li>
+            <li>Buddha Dordenma statue</li>
+            <li>BBS Tour</li>
+            <li>Bhutan simply museum</li>
+          </ul>   
+          <hr/>
+          <h3>Day 4: Tranasfer to Punakha/Wangdue</h3>
+          <ul>
+            <li>Spectacular view of Himalayas</li>
+            <li>Punakha Suspension Bridge</li>
+          </ul>   
+          <p>Transfer to Paro Paro</p>
+          <i>Stay at Kisa Villa</i>
+          <hr/>
+          <h3>Day 5: Sightseeing in Paro Paro</h3>
+          <ul>
+           <li>Visit the historic ruins of Drukgyal Dzong</li>
+           <li>UgyenPelri Palace</li>
+           <li>A ride to Chele-La Pass</li>
+           <li>Sacred nountain Jomolhari and JIchu Drake</li>
+          </ul>
+          <p>Transfer to Bagdogra Airport</p>
+          <dl>
+            <dt><i>Flight from Bagdogra to Bengaluru</i></dt>
+            <dd>07:00 PM ------------ 12:00 AM</dd>
+         </dl>
+          <hr/>
+          <h3>Total price:Rs.32,000</h3>
+        </section>
+        );
+      }
+    }
+    ReactDOM.render(<Bhutan/>,document.getElementById("root"));
+    </script>
+</html>

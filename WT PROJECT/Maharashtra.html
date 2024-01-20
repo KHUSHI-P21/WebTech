@@ -1,0 +1,102 @@
+<html>
+    <head> 
+        <title>Maharashtra</title> 
+        <link rel="stylesheet" href="packages_css.css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+        </style>
+    </head>
+    <body>
+        <section class="nav-bar">
+            <div class="logo">Voyage Vista</div>
+            <ul class="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">Login/Signup</a></li>
+                <li><a href="Main_page.html">packages</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            </div>
+        </section>
+        <section>
+            <h1>Maharashtra</h1>
+            <img src="Maharashtra.jpeg" alt="Maharashtra" height="200" width="600"></img>
+        </section>
+        <div id="root"></div>
+            <a href="Booking_details.html"><button>Confirm package</button></a>
+            <a href="Main_page.html"><button>Back</button></a>
+        
+    </body>
+    <script type="text/babel">
+        class Maharashtra extends React.Component{
+            render(){
+                return(
+                    <section class="wow">
+                        <h3><u>Itenary:</u></h3>
+                        <p>6 Days plan</p>
+                        <ul>
+                            <li>2 Flights</li>
+                            <li>4 Transfers</li>
+                            <li>4 Hotels</li>
+                        </ul>  
+                        <hr/>
+                        <h3>Day 1: Arrival in Mumbai</h3>
+                        <dl>
+                            <dt><i>Flight from Bangalore to Mumbai</i></dt>
+                            <dd>10:55 AM------&#9992;-------11:55 AM</dd>
+                            <p></p>
+                            <dt><i>Stay at Trident Nariman Point</i></dt>
+                            <p>Spend your day by relaxing at the Marine drive</p>    
+                        </dl>
+                        <hr/>
+                        <h3>Day 2: Sightseeing in Mumbai</h3>
+                        <dl>
+                            <p>Go sightseeing in the city and try out the authentic cuisines</p>   
+                        </dl>
+                        <hr/>
+                        <h3>Day 3: Arrive in Nashik</h3>
+                        <dl>
+                            <dt><i>Transfer from Mumbai to Nashik</i></dt>
+                            <dd>4 hrs 28 mins</dd>
+                            <dt><i>Stay at IBIS hotel</i></dt>
+                            <p>Enjoy the greenery of Nashik and don't forget to try out the oranges while you are out there!!!</p>    
+                        </dl>
+                        <hr/>
+                        <h3>Day 4: Arrive in Lonavala</h3>
+                        <dl>
+                            <dt><i>Transfer from Nashik to Lonavala</i></dt>
+                            <dd>5 hrs 1 min</dd>
+                            <dt><i>Stay at The fern an ecotel hotel</i></dt>
+                            <p>Cool yourselves in the beautiful breeze of this amazing hill station</p>   
+                        </dl>
+                        <hr/>
+                        <h3>Day 5: Arrive in Mahableshwar</h3>
+                        <dl>
+                            <dt><i>Transfer from Lonavala to Mahableshwar</i></dt>
+                            <dd>4 hrs 14 min</dd>
+                            <dt><i>Stay at Hotel Millennium Park</i></dt>
+                            <p>Enjoy your day by exploring this beautiful place in the Western Ghats</p>    
+                        </dl>
+                        <hr/>
+                        <h3>Day 6: Arrive in Mumbai</h3>
+                        <dl>
+                            <dt><i>Transfer from Mahableshwar to Mumbai</i></dt>
+                            <dd>5 hrs 36 mins</dd>
+                            <dt><i>Flight from Mumbai to Bangalore</i></dt>
+                            <dd>1:05 PM------&#9992;-------2:50 PM</dd>   
+                        </dl>
+                        <hr/>
+                        <h3>Total price:Rs.50,000</h3>
+                    </section>
+                );
+            }
+        }
+        ReactDOM.render(<Maharashtra/>,document.getElementById("root"));
+    </script>
+</html>
